@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="text-center mt-5">
+        <h1>Calcular el area de un cuadrado</h1>
+        <img src="https://www.neurochispas.com/wp-content/uploads/2021/03/formula-del-area-de-un-triangulo-rectangulo.png" width="26%" alt="">
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="d-flex justify-content-center align-items-center" style="height: 100px;">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Base</label>
+                  <input type="number" step="0.01" class="form-control" id="base" [(ngModel)]="base" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">Ingrese la base del triangulo en cm.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Altura</label>
+                    <input type="number" step="0.01" class="form-control" id="altura" [(ngModel)]="altura" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Ingrese la altura del triangulo en cm</div>
+                  </div>
+
+                  <div *ngIf="base">
+                    <p>Área del Triangulo con altura de {{ altura }} y base de {{ base }} = {{ calcularAreaT()}} unidades</p>
+                  </div>
+            
+        </div>
+
+    </div>
+</div>

@@ -27,5 +27,5 @@ jobs:
     - name: Run TestCafe form
       run: testcafe chromium:headless ./test/form.js
 
-    - name: Run TestCafe nav
+    - name: Run TestCafe app-root
       run: testcafe chromium:headless ./test/nav.js

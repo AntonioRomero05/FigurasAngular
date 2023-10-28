@@ -1,10 +1,13 @@
 import { Selector } from 'testcafe';
 
-fixture `TestCafe Smoke Test`
-    .page `https://figuras-angular-mc0atadkn-jose-antonio-s-projects.vercel.app/circulo`; // Asegúrate de reemplazar con tu URL local
+fixture('Test Cafe smoke test')
+  .page('https://figuras-angular-mc0atadkn-jose-antonio-s-projects.vercel.app/circulo');
 
-test('TestCafe is Working Properly', async t => {
-    // Agrega aquí tu lógica de prueba
-    await t
-        .expect(Selector('input').exists).ok();
+test('Verificar la existencia de un input', async (t) => {
+  // Definir un selector para el elemento input
+  const inputElement = Selector('input');
+
+  // Realizar la aserción para verificar si el elemento input existe
+  await t
+    .expect(inputElement.exists).ok('El elemento input debería existir en la página.');
 });

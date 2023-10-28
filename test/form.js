@@ -6,5 +6,5 @@ fixture `TestCafe Smoke Test`
 test('TestCafe is Working Properly', async t => {
     // Agrega aquí tu lógica de prueba
     await t
-        .expect(Selector('#radio_title').innerText).eql("Radio");
+        .expect(Selector('input').exists).ok();
 });

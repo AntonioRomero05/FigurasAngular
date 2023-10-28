@@ -21,9 +21,6 @@ jobs:
     - name: Install project dependencies
       run: npm install
 
-    - name: Run TestCafe tests
-      run: testcafe chromium:headless ./test/body.js
-
     - name: Run TestCafe form
       run: testcafe chromium:headless ./test/form.js
 

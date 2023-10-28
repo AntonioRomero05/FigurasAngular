@@ -23,3 +23,9 @@ jobs:
 
     - name: Run TestCafe tests
       run: testcafe chromium:headless ./test/body.js
+
+    - name: Run TestCafe form
+      run: testcafe chromium:headless ./test/form.js
+
+    - name: Run TestCafe nav
+      run: testcafe chromium:headless ./test/nav.js
